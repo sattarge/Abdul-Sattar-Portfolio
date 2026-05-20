@@ -165,7 +165,7 @@ document.getElementById("send-btn").addEventListener("click", async () => {
 
   try {
 
-    const response = await fetch("npx plugins add vercel/vercel-plugin/send-email", {
+    const response = await fetch("https://abdul-sattar-portfolio.vercel.app/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
