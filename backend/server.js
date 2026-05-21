@@ -107,6 +107,7 @@ ${message}
 // ── 7. Health-check route (optional) ────────────────────────
 app.get("/", (req, res) => {
   res.send("Contact Form Backend is running ✅");
+  console.log("backend run succesfully!");
 });
 
 // ── 8. Start server ──────────────────────────────────────────
