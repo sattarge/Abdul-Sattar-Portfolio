@@ -110,7 +110,10 @@ app.get("/", (req, res) => {
   console.log("backend run succesfully!");
 });
 
-// ── 8. Start server ──────────────────────────────────────────
-app.listen(PORT, () => {
-  console.log(`🚀 Server running at http://localhost:${PORT}`);
-});
+// ── 8. Export app for Vercel ────────────────────────────────
+module.exports = app;
+
+// // ── 8. Start server ──────────────────────────────────────────
+// app.listen(PORT, () => {
+//   console.log(`🚀 Server running at http://localhost:${PORT}`);
+// });
