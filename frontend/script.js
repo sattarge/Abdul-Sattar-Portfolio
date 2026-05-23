@@ -39,12 +39,12 @@ document.querySelectorAll('a,button,.choice-btn,.project-card,.skill-card,.servi
   let w, h, pts = [];
   function resize() { w = canvas.width = window.innerWidth; h = canvas.height = window.innerHeight; }
   window.addEventListener('resize', resize); resize();
-  const N = 60;
+  const N = 100;
   for (let i = 0; i < N; i++) pts.push({
-    x: Math.random()*w, y: Math.random()*h,
-    vx: (Math.random()-.5)*.3, vy: (Math.random()-.5)*.3,
+    x: Math.random()*w+1, y: Math.random()*h+1,
+    vx: (Math.random()-1)*.2, vy: (Math.random()-.5)*.5,
     r: Math.random()*1.5+.5,
-    a: Math.random()
+    a: Math.random()*2.5,
   });
   function draw() {
     ctx.clearRect(0,0,w,h);
