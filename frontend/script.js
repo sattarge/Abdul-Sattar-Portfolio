@@ -41,7 +41,7 @@ document.querySelectorAll('a,button,.choice-btn,.project-card,.skill-card,.servi
   window.addEventListener('resize', resize); resize();
   const N = 100;
   for (let i = 0; i < N; i++) pts.push({
-    x: Math.random()*w+1, y: Math.random()*h+1,
+    x: Math.random()*w, y: Math.random()*h,
     vx: (Math.random()-1)*.2, vy: (Math.random()-.5)*.5,
     r: Math.random()*1.5+.5,
     a: Math.random()*2.5,
